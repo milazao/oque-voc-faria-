@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --cor-principal: #1F8A70;
+    --fundo-gradiente: linear-gradient(135deg, #F1F2B5 0%, #135058 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--fundo-gradiente);
+    height: 100vh;
+    flex-direction: column;
+}
+
+.caixa-principal {
+    display: flex;
+    width: 60rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#campo-texto {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    resize: none;
+}
+
+#campo-texto::placeholder {
+    color: #999;
+    font-size: 1.4rem;
+}
+
+#botao-extrair {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#botao-extrair:hover {
+    background-color: #166c57;
+}
+
+#resultado-termos {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1.6rem;
+    text-align: center;
+    word-break: break-word;
+    max-height: 40vh;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    width: 100%;
+}
